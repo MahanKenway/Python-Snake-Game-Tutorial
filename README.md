@@ -1,118 +1,49 @@
-# 🎮 اولین پست گیت‌هاب - آموزش بازی‌سازی با Python
+# 🌌 NEON RUNNER: Avoid the Void
 
-یک پروژه آموزشی برای یادگیری ساخت بازی ویدیویی با Python و کتابخانه Pygame
+![Neon Runner Banner](https://img.shields.io/badge/Game-Neon%20Runner-00f3ff?style=for-the-badge&logo=game-controller)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-HTML5%2FJS-orange?style=for-the-badge)
+![Engine](https://img.shields.io/badge/Engine-Three.js-blueviolet?style=for-the-badge)
 
-## 📖 درباره پروژه
+**Neon Runner** is a high-octane, 3D endless runner game built with **Three.js** and **TailwindCSS**. Experience a retro-futuristic world with neon aesthetics, CRT effects, and fast-paced gameplay.
 
-این پروژه یک بازی کلاسیک **مار (Snake)** است که به صورت کامل با Python و Pygame پیاده‌سازی شده است. هدف از این پروژه آموزش مفاهیم پایه برنامه‌نویسی بازی به مبتدیان است.
+## 🎮 Live Demo
+You can play the game directly in your browser! (Coming soon via GitHub Pages)
 
-## 🎯 چیزهایی که در این پروژه یاد می‌گیرید
+## ✨ Features
+- **Stunning 3D Graphics**: Powered by Three.js with custom shaders and neon lighting.
+- **CRT Retro Effects**: Scanlines, flicker, and vignette for that authentic 80s arcade feel.
+- **Dynamic Gameplay**: Increasing speed, procedural obstacle generation, and collectible shards.
+- **Responsive Design**: Fully playable on both Desktop (Keyboard) and Mobile (Touch/Swipe).
+- **HUD System**: Real-time score tracking and shield (health) management.
 
-- **مقداردهی اولیه Pygame**: نحوه راه‌اندازی و تنظیم محیط بازی
-- **حلقه بازی (Game Loop)**: ساختار اصلی هر بازی ویدیویی
-- **مدیریت رویدادها**: دریافت و پردازش ورودی کاربر
-- **برنامه‌نویسی شی‌گرا (OOP)**: استفاده از کلاس‌ها برای سازماندهی کد
-- **تشخیص برخورد (Collision Detection)**: بررسی برخورد اشیاء در بازی
-- **رسم گرافیک**: نمایش اشیاء و متن روی صفحه
-- **مدیریت وضعیت بازی**: کنترل جریان بازی و صفحات مختلف
+## 🕹️ How to Play
+### Desktop
+- **A / Left Arrow**: Move Left
+- **D / Right Arrow**: Move Right
+- **Space / W / Up Arrow**: Jump
+- **ESC**: Pause Game
 
-## 🚀 نصب و اجرا
+### Mobile
+- **Swipe Left/Right**: Move
+- **Tap**: Jump
 
-### پیش‌نیازها
+## 🛠️ Technical Stack
+- **Frontend**: HTML5, CSS3 (TailwindCSS)
+- **3D Engine**: [Three.js](https://threejs.org/)
+- **UI/UX**: Custom CSS animations and CRT filters
+- **Math**: Procedural generation and collision detection algorithms
 
-- Python 3.6 یا بالاتر
-- کتابخانه Pygame
+## 🚀 Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MahanKenway/Python-Snake-Game-Tutorial.git
+   ```
+2. Open `index.html` in any modern web browser.
+3. Enjoy the run!
 
-### مراحل نصب
-
-1. **کلون کردن مخزن:**
-```bash
-git clone https://github.com/YOUR_USERNAME/first-github-post.git
-cd first-github-post
-```
-
-2. **نصب Pygame:**
-```bash
-pip install pygame
-```
-
-3. **اجرای بازی:**
-```bash
-python snake_game.py
-```
-
-## 🎮 نحوه بازی
-
-- از **کلیدهای جهت‌دار** (↑ ↓ ← →) برای حرکت مار استفاده کنید
-- **غذای قرمز** را بخورید تا مار بزرگ‌تر شود و امتیاز بگیرید
-- از برخورد با **دیواره‌ها** یا **خود مار** اجتناب کنید
-- پس از پایان بازی، **Space** را برای شروع مجدد یا **ESC** را برای خروج فشار دهید
-
-## 📚 ساختار کد
-
-### کلاس Snake
-مسئول مدیریت مار، شامل:
-- `move()`: حرکت مار
-- `change_direction()`: تغییر جهت حرکت
-- `check_collision()`: بررسی برخورد
-- `eat_food()`: بررسی خوردن غذا
-- `draw()`: رسم مار روی صفحه
-
-### کلاس Food
-مسئول مدیریت غذا، شامل:
-- `generate_position()`: تولید موقعیت تصادفی
-- `respawn()`: ظاهر شدن مجدد غذا
-- `draw()`: رسم غذا روی صفحه
-
-### توابع کمکی
-- `draw_score()`: نمایش امتیاز
-- `game_over_screen()`: صفحه پایان بازی
-- `main()`: تابع اصلی و حلقه بازی
-
-## 🔧 تنظیمات قابل تغییر
-
-می‌توانید تنظیمات زیر را در فایل `snake_game.py` تغییر دهید:
-
-```python
-WIDTH = 600          # عرض صفحه
-HEIGHT = 400         # ارتفاع صفحه
-CELL_SIZE = 20       # اندازه هر سلول
-FPS = 10             # سرعت بازی (فریم در ثانیه)
-```
-
-## 💡 ایده‌های توسعه
-
-می‌توانید بازی را با افزودن این ویژگی‌ها بهبود دهید:
-
-- [ ] افزودن سطوح مختلف با سرعت متفاوت
-- [ ] اضافه کردن موانع در صفحه بازی
-- [ ] ثبت بهترین امتیاز (High Score)
-- [ ] افزودن صداهای بازی
-- [ ] ایجاد حالت دو نفره
-- [ ] افزودن انواع مختلف غذا با امتیازهای متفاوت
-- [ ] طراحی منوی شروع بازی
-
-## 📖 منابع یادگیری
-
-- [مستندات رسمی Pygame](https://www.pygame.org/docs/)
-- [آموزش Pygame برای مبتدیان](https://www.pygame.org/wiki/tutorials)
-- [مفاهیم پایه برنامه‌نویسی بازی](https://en.wikipedia.org/wiki/Video_game_programming)
-
-## 🤝 مشارکت
-
-اگر پیشنهاد یا بهبودی دارید، خوشحال می‌شوم که:
-1. این مخزن را Fork کنید
-2. تغییرات خود را اعمال کنید
-3. یک Pull Request ارسال کنید
-
-## 📝 مجوز
-
-این پروژه تحت مجوز MIT منتشر شده است - برای جزئیات بیشتر فایل LICENSE را مشاهده کنید.
-
-## 👨‍💻 نویسنده
-
-ساخته شده با ❤️ برای یادگیری برنامه‌نویسی بازی
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-**نکته:** این پروژه برای اهداف آموزشی طراحی شده است. از آن برای یادگیری و تمرین استفاده کنید!
+*Developed with ❤️ by MahanKenway. Inspired by the Synthwave aesthetic.*
